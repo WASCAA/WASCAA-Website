@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Washington Student Cancer Awareness Association</title>
+        <script src="https://kit.fontawesome.com/4944e6043a.js" crossorigin="anonymous"></script>
+        <meta name="description" content="Washington Student Cancer Awareness Assocation (WASCAA) is a nonprofit organization led and run by students that raises awareness and creates charitable fundraising events for cancer throughout Washington."/>
+         <link rel="icon" href="wascaaicon.png" type="image/png">
+        <meta name="keywords" content="Inglemoor High School, Washington Student Cancer Awareness Assocation, WASCAA, Cancer, Non-Profit, Washington State, Students, Community, Health, Health Awareness, Awareness">
+        <meta name="author" content="Allan Dao, WASCAA Team">
+        <meta name="robots" content="index, follow" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118965499-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-118965499-1');
+        </script>
+        <style>
+        /* Custom styles written in order to add to the website theme and redesign certain parts*/
+
+        /* For logos (experience) and hobbies section with 3 images/logos */
+        #three-items {
+            display:flex;
+            justify-content:center;
+            align-items:center; 
+        }
+
+        .img-full {
+            min-width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .img_row {
+        	margin: 10px 10px 0 10px;
+        }
+
+        .img_row::after {
+            content: "";
+            clear: both;
+            display: table;
+            margin: 0 auto;
+        }
+
+        .img_column {
+            float: left;
+            width: 31.7%;
+            height: auto;
+            margin: 0 10px 0 10px;
+            padding: 0;
+        }
+        /*Styles above for image rows in project section*/
+
+        /*Media Query to make images fill width of screen*/
+        @media screen and (max-width: 980px) {
+            .img_column {
+                float: left;
+                width: 100%;
+            }
+        }
+
+        /*Min-width for skill bars, force the three item lists to stack, turn on :active overlay for mobile devices*/
+        @media screen and (max-width: 480px) {
+            #three-items {
+                display: block;
+                padding: 0;
+            }
+            .imgContainer:active .overlay {
+              background-color: rgba(0,0,0,0.75);
+              background-color: rgb(0,0,0,0.75);
+              opacity: 1;
+            }
+            .hobby_icons {
+                padding: 14px 30px 0 30px;
+            }
+        }
+
+        @media screen and (max-width: 370px) {
+            .skills-progress {
+                min-width: 200px;
+            }
+            .progress div {
+                font-size: 10px;
+            }
+            .project_overlay .project_overlay_text {
+                font-size: 12px;
+            }
+        }
+
+        /*Background images for header sections*/
+        #design_background {
+            background: linear-gradient(180deg, rgba(52, 152, 219, .45) 0%, rgba(52, 152, 219, .45) 96%), url(https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3ecc13b203d60ff0fa05b07805b0f2ca&auto=format&fit=crop&w=1950&q=80) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: absolute;
+            /* scroll for mobile */
+            background-attachment: scroll;
+            min-height: 100%;
+            height: inherit;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /*Project overlays*/
+        .project_overlay_text {
+          color: white;
+          font-size: 15px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+          width: 90%;
+        }
+
+        .project_overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: rgba(0,140,186,0);
+        }
+
+        .project_imgContainer {
+            position: relative;
+        }
+
+        .project_imgContainer:hover .project_overlay {
+          background-color: rgba(0,0,0,0.75);
+          background-color: rgb(0,0,0,0.75);
+          opacity: 1;
+        }
+        .project_img {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+   		</style>
+	</head>
+
+	<body class="landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html" style = "color: white">Washington Student
+							Cancer Awareness Association</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="getinvolved.html">Get Involved</a></li>
+							<li><a href="events.html">Events</a></li>
+              <li><a href="tutoring.html">WASCAA+</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">About Us</a>
+								<ul>
+									<!-- <li><a href="generic.html">Generic</a></li> -->
+                                    <li><a href="mission.html">Our Mission</a></li>
+                                    <li><a href="team.html">Our Team</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+									<!-- <li><a href="elements.html">Elements</a></li>
+									<li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Option One</a></li>
+											<li><a href="#">Option Two</a></li>
+											<li><a href="#">Option Three</a></li>
+											<li><a href="#">Option Four</a></li>
+										</ul>
+									</li> -->
+								</ul>
+							</li>
+							<li><a href="https://www.mightycause.com/organization/Washington-Student-Cancer-Awareness-Association" target = "_blank">Donate</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<!-- <h2>Alpha</h2>
+					<p>Another fine responsive site template freebie by HTML5 UP.</p> -->
+                    <center>
+                    <img src = "wascaalogo.png" id = "bannerimage" alt="Washington Student Cancer Awareness Association Logo" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none; height: auto; width: 60%;">
+                    </center>
+                    <div id="bannervideo" style = "margin-top: -1px;">
+                    <div id="video_overlays"></div>
+                    <video playsinline autoplay muted loop preload = 'auto' class="bgvid" id = "bgvidjs">
+                    <!-- <source src="video.webm" type="video/webm"> -->
+                    <source src="wascaashort.mp4" type="video/mp4">
+                    </video>
+                    </div>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<h2>Welcome to the Washington Student
+							<br />
+							Cancer Awareness Association</h2>
+                            <p style = "padding-bottom: 5px;">Our goal is to collaborate with students from around Washington state to become involved in helping the cancer community. <!--<br /><br /> <strong>It all starts here.</strong></p>-->
+						</header>
+                        <!--<span class="image featured"  style = "margin-top: 10px;"><img src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea57442bf3e8f56890337f5accda026b&auto=format&fit=crop&w=1050&q=80" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>-->
+					</section>
+
+          <div class="row">
+          <div class="12u 12u(narrower)">
+
+              <section class="box special">
+                <span class="image featured"><img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>
+                <h3>Introducing WASCAA+</h3>
+                <p>WASCAA+ is Washington Student Cancer Awareness' new initiative that is based on the premise of providing quality tutoring services. Not only do all students receive quality services for great value, all tutoring fees directly contribute to our goals as a nonprofit.</p>
+                <ul class="actions">
+                  <li style = "margin-top: 7px;"><a href="tutoring.html" class="button alt">Learn More and Register Today!</a></li>
+                </ul>
+              </section>
+
+            </div>
+          </div>
+
+					<div class="row">
+					<div class="12u 12u(narrower)">
+
+							<section class="box special">
+								<span class="image featured"><img src="https://images.unsplash.com/photo-1508087625439-de3978963553?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>
+								<h3>Event Updates</h3>
+								<p>Thank you for all of the support for our <a href = "https://www.eventbrite.com/e/kick-away-cancer-charity-soccer-tournament-tickets-60735275845">Kick Away Cancer soccer tournament</a>. Back in May 25th-26th last year, we had many middle and high school teams join us and enjoy some soccer in the sunshine, ultimately helping us raise over $3000 dollars. Please stay tuned for our future initiatives and thank you for the overwhelming support! <br/><br/>Click the photo below to see pictures of some of the soccer teams!</p>
+								<a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/183209327@N07/albums/72157710171706327" title="Kick Away Cancer"><img src="https://live.staticflickr.com/65535/48485696086_802f716512_n.jpg" width="320" height="240" alt="Kick Away Cancer"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+								<ul class="actions">
+									<li style = "margin-top: 7px;"><a href="events.html" class="button alt">See More</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+
+					<div class="row">
+                        <div class="6u 12u(narrower)">
+
+							<section class="box special">
+								<span class="image featured"><img src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c58c392d4e9f7dd63cd99ce3327b32a7&auto=format&fit=crop&w=1050&q=80" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>
+								<h3>Our Mission</h3>
+								<p>Cancer is something that touches all of our lives. Learn more about the goals of our nonprofit.</p>
+								<ul class="actions">
+									<li><a href="mission.html" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+
+						<div class="6u 12u(narrower)">
+
+							<section class="box special">
+								<span class="image featured"><img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d5c6c65f9940b030316c3cdf11b16659&auto=format&fit=crop&w=1050&q=80" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>
+								<h3>Meet the Team</h3>
+								<p>Meet the team of hardworking high school students that run everything behind the scenes.</p>
+								<ul class="actions">
+									<li><a href="team.html" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+
+						<div class="row">
+							<!--<div class="6u 12u(narrower)">
+
+							<section class="box special">
+								<span class="image featured"><img src="images/coding4medicine.jpg" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>
+								<h3>Feature Program: <br />Coding 4 Medicine</h3>
+								<p>Through Coding 4 Medicine, you will have the chance to see how the worlds of computer science and medicine are merging. Learn the skills to contribute to this fast changing scientific world. See more by by visiting <a href = "https://hs.coding4medicine.com" target = "_blank">hs.coding4medicine.com</a><br /><br /></p>
+								<ul class="actions">
+									<li><a href="https://drive.google.com/file/d/1l2Tz7MiqSSvzKNs-f-kALaEz0utORqur/view?usp=sharing" target = "_blank" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+							</div>-->
+
+							<!-- 6u when there are two within a row -->
+							<div class="7u 12u(narrower)">
+
+							<section class="box special">
+								<h3 style = "text-align: center;">Donate Today</h3>
+					<p style = "text-align: center;">Please consider donating today to support our cause. Your money goes directly into our future events and programs!</p>
+					<iframe width="310" height="393" src= "https://www.mightycause.com/embed/Washington-Student-Cancer-Awareness-Association?embed=widget" scrolling="no" marginHeight="0" marginWidth="0" frameBorder="0" style = "margin: 0 auto; display: block;" ></iframe> 
+							</section>
+
+							</div>
+						</div> 
+
+						<!-- <div class="12u 12u(narrower)">
+
+							<section class="box special">
+								<span class="image featured"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=47d2b1f32cc05c976af4a39256e01cba&auto=format&fit=crop&w=1950&q=80" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>
+								<h3>Our Student Chapters</h3>
+								<p>At the core of WASCAA are the student-led chapters found across schools in Washington State. Contact us to learn more about finding or creating your local chapter today!</p>
+								<ul class="actions">
+									<li><a href="contact.html" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>-->
+
+					</div>
+
+          <section class="box special features" style = "margin-top: -10px;">
+            <div class="features-row">
+              <section>
+                <i class="icon major fas fa-heart accent2" style = "font-family: Font Awesome; font-style: normal;"></i>
+                <h3>Local Nonprofit</h3>
+                <p>WASCAA is a local 501(c)(3) nonprofit based in the Puget Sound Area.</p>
+              </section>
+              <section>
+                <i class="icon major fas fa-handshake accent3"></i>
+                <h3>Local</h3>
+                <p>WASCAA seeks to find ways to work with local community members and organizations.</p>
+              </section>
+            </div>
+            <div class="features-row">
+              <section>
+                <span class="icon major fa fa-users accent4"></span>
+                <h3>Community Involvement</h3>
+                <p>WASCAA hosts community oriented events in hopes to further raise awareness.</p>
+              </section>
+              <section>
+                <span class="icon major fa fa-graduation-cap accent5"></span>
+                <h3>Student Run</h3>
+                <p>WASCAA is an independent, student run organization.</p>
+              </section>
+            </div>
+          </section>
+
+				</section>
+	<!-- Image Testing - rows of images-->
+	<!--<center>
+		<div class="img_row">
+          <div class="img_column project_imgContainer" ontouchstart = "">
+            <img src="images/5kforabetterday2019_2.jpg" alt="Washington Student Cancer Awareness Assocation Website" class = "project_img">
+          </div>
+          <div class="img_column project_imgContainer" ontouchstart = "">
+            <img src="images/5kforabetterday2019_2.jpg" alt="Waikiki Cell Phone Repair Website" class = "project_img">
+          </div>
+          <div class="img_column project_imgContainer" ontouchstart = "">
+            <img src="images/5kforabetterday2019_2.jpg" alt="FBLA Video Game: Membership Mania" class = "project_img">
+          </div>
+      </div>
+      <div class="img_row">
+          <div class="img_column project_imgContainer" ontouchstart = "">
+            <img src="images/5kforabetterday2019_2.jpg" alt="Study Link Social Media Network Project for TSA" class = "project_img">
+          </div>
+          <div class="img_column project_imgContainer" ontouchstart = "">
+            <img src="images/5kforabetterday2019_2.jpg" alt="Rocket Careers Website" class = "project_img">
+          </div>
+          <div class="img_column project_imgContainer" ontouchstart = "">
+            <img src="images/5kforabetterday2019_2.jpg" alt="Prolepsis Artificial Intelligence Website" class = "project_img">
+            </div>
+      </div>
+      <div class="img_row">
+          <div class="img_column project_imgContainer" ontouchstart = "">
+            <img src="images/5kforabetterday2019_2.jpg" alt="Extreme Slopes Snowboarding" class = "project_img">
+          </div>
+          <div class="img_column project_imgContainer" ontouchstart = "">
+            <img src="images/5kforabetterday2019_2.jpg" alt="Hunt the Wumpus" class = "project_img">
+            <div class="project_overlay">	
+            	<div class="project_overlay_text text-white">The Minotaur:<br />A video game created around the annual 'Hunt the Wumpus' competition at Microsoft. Won Runner-up award for project.</div>
+            </div>
+          </div>
+          <div class="img_column project_imgContainer" ontouchstart = "">
+            <img src="images/5kforabetterday2019_2.jpg" alt="Cardboard Stool" class = "project_img">
+          </div>
+      </div>
+    </center>-->
+           
+            </section>
+            
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+                        <!--<li><a href="https://twitter.com/WashingtonSCAA" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/WASCAA.npo/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>-->
+						<li><a href="https://www.instagram.com/wa.scaa/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2020 Washington Student Cancer Awareness Association. All rights reserved.</li>
+						<li>Design: HTML5 UP and <a href = "team/allandao.html">WASCAA</a></li>
+						<li><a href = "contact.html">Contact Us</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+            <script>
+                var vid = document.getElementById("bgvidjs");
+                vid.playbackRate = 0.80;
+            </script>
+	</body>
+</html>
