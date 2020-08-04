@@ -3264,6 +3264,10 @@
 			text-align: center;
 		}
 
+			#footer .copyright li:last-child {
+				margin-top: 15px;
+			}
+
 			#footer .copyright a {
 				color: inherit;
 			}
