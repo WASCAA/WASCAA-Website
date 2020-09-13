@@ -12,6 +12,22 @@
 		vertical-align: baseline;
 	}
 
+	@media only screen and (max-width: 768px) {
+		/* For phones */
+    	.tutoring_logo {
+			width: 45%;
+		}
+	}
+
+	.tutoring_logo {
+		user-drag: none;
+		-moz-user-select: none;
+		-webkit-user-drag: none;
+		height: auto;
+		width: 35%;
+		margin-top: -1em;
+	}
+
     @media (max-width: 736px) {
         video.bgvid {
         display: none;
