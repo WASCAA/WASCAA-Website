@@ -3146,7 +3146,7 @@
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: linear-gradient(180deg, rgba(229,150,17,0.5) 0%, rgba(0,180,255,0.5) 100%);
+    background: linear-gradient(180deg, rgba(229,150,17,0.45) 0%, rgba(0,180,255,0.5) 100%);
     background-size: cover;
     z-index:-99;
     margin: 0;
