@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /team/
+Disallow: /templates_old/
+Disallow: /images/team/old

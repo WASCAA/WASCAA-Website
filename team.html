@@ -8,10 +8,12 @@
         <meta name="robots" content="index, follow" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script src="https://kit.fontawesome.com/4944e6043a.js" crossorigin="anonymous"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118965499-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,204 +25,16 @@
             html {
               box-sizing: border-box;
             }
+            #card {
+                margin-bottom: 30px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add some shadows to create a card effect */
+            }
             #card img {
+                width: 100%;
+                max-height: 300px;
                 user-drag: none; 
                 -moz-user-select: none; 
                 -webkit-user-drag: none;
-            }
-            /* Five columns side by side */
-             #row {
-                margin-top: 20px;
-                position: relative;
-            }
-            #column {
-                float: left;
-                width: 20%;
-                margin-bottom: 16px;
-                padding: 0 8px;
-            }
-            .columnhidefive {
-                    float: left;
-                    width: 20%;
-                    margin-bottom: 16px;
-                    padding: 0 8px;
-            }
-            .columnhidefour {
-                    float: left;
-                    width: 25%;
-                    margin-bottom: 16px;
-                    padding: 0 8px;
-                    display: none;
-                    position: absolute;
-            }
-            .columnhidetwo {
-                    float: left;
-                    width: 50%;
-                    margin-bottom: 16px;
-                    padding: 0 8px;
-                    display: none;
-                    position: absolute;
-            }
-            #specialphoto {
-                width: 99.99%;
-            }
-            /* Display the columns below each other instead of side by side on small screens */
-            @media (max-width: 860px) {
-                .columnhidefive {
-                    display: none;
-                    position: absolute;
-                }
-                .lastrow {
-                    display: none;
-                    position: absolute;
-                }
-                #column {
-                    width: 50%;
-                    display: block;
-                }
-                #teamfirsttext {
-                    margin-top: 50px;
-                }
-                .columnhidetwo {
-                    width: 50%;
-                    display: block;
-                    position: relative;
-                    margin-bottom: 20px;
-                }
-                #specialphoto {
-                width: 100%;
-                }
-                .specialcasefour {
-                    opacity: 0; 
-                    z-index: -1000;
-                }
-            }
-            @media (max-width: 1110px) and (min-width: 860px) {
-                #column {
-                    width: 25%;
-                    display: block;
-                }
-                .columnhidefive {
-                    display: none;
-                    position: absolute;
-                }
-                .lastrow {
-                    display: none;
-                    position: absolute;
-                }
-                .columnhidefour {
-                    width: 25%;
-                    display: block;
-                    position: relative;
-                }
-                .specialcasetwo {
-                    opacity: 0; 
-                    z-index: -1000;
-                }
-            }
-            @media (min-width: 835px) {
-                .smallcolumns {
-                    display: none;
-                    position: absolute;
-                }
-                .smallcolumns2 {
-                    display: none;
-                    position: absolute;
-                }
-            }
-            @media (max-width: 860px) and (min-width: 780px) {
-                .footerbr {
-                    display: block;
-                    position: relative;
-                }
-                .footerbr2 {
-                    display: block;
-                    position: relative;
-                }
-                .footerbr3 {
-                    display: block;
-                    position: relative;
-                }
-                .footerbr4 {
-                    display: block;
-                    position: relative;
-                }
-            }
-            @media (max-width: 780px) and (min-width: 715px) {
-                .footerbr {
-                    display: block;
-                    position: relative;
-                }
-                .footerbr2 {
-                    display: block;
-                    position: relative;
-                }
-                .footerbr3 {
-                    display: block;
-                    position: relative;
-                }
-            }
-            @media (max-width: 715px) and (min-width: 570px) {
-                .footerbr {
-                    display: block;
-                    position: relative;
-                }
-                .footerbr2 {
-                    display: block;
-                    position: relative;
-                }
-            }
-            @media (max-width: 400px) {
-                .wrappersmall {
-                white-space: nowrap; 
-                overflow: hidden;
-                text-overflow: ellipsis; 
-                }
-            }
-            @media (max-width: 380px) {
-                .wrappersmall {
-                white-space: nowrap; 
-                overflow: hidden;
-                text-overflow: ellipsis; 
-                }
-            }
-            @media (max-width: 385px) {
-                .columnhidefive {
-                    display: none;
-                    position: absolute;
-                }
-                .columnhidefour {
-                    display: none;
-                    position: absolute;
-                }
-                .specialcasefour {
-                    opacity: 0; 
-                    z-index: -1000;
-                }
-                .specialcasetwo {
-                    opacity: 0; 
-                    z-index: -1000;
-                }
-                .columnhidetwo {
-                    display: none;
-                    position: absolute;
-                }
-                #column {
-                    width: 100%;
-                    display: block;
-                }
-                #teamfirsttext {
-                    margin-top: 50px;
-                }
-                #specialphoto {
-                width: 100%;
-                }
-                .lastrow {width: 100%;
-                    display: block;}
-            }
-            /* Add some shadows to create a card effect */
-            #card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             }
 
             /* Some left and right padding inside the container */
@@ -270,246 +84,141 @@
                     <h1><a href="index.html" style = "color: white;">Washington Student
                             Cancer Awareness Association</a></h1>
                     <nav id="nav">
-                                   <ul>
-                                      <li><a href="index.html">Home</a></li>
-                                      <li><a href="events.html">Events</a></li>
-                                      <li>
-                                         <a href="tutoring.html" class="icon fa-angle-down">WASCAA+</a>
-                                         <ul>
-                                            <li><a href="tutoring.html">Learn More & Sign Up</a></li>
-                                            <li><a href="tutorapplication.html">Tutor Application</a></li>
-                                         </ul>
-                                      </li>
-                                      <li>
-                                         <a href="#" class="icon fa-angle-down">About Us</a>
-                                         <ul>
-                                            <!-- <li><a href="generic.html">Generic</a></li> -->
-                                            <li><a href="mission.html">Our Mission</a></li>
-                                            <li><a href="team.html">Our Team</a></li>
-                                            <li><a href="getinvolved.html">Get Involved</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <!-- <li><a href="elements.html">Elements</a></li>
-                                               <li>
-                                                <a href="#">Submenu</a>
-                                                <ul>
-                                                    <li><a href="#">Option One</a></li>
-                                                    <li><a href="#">Option Two</a></li>
-                                                    <li><a href="#">Option Three</a></li>
-                                                    <li><a href="#">Option Four</a></li>
-                                                </ul>
-                                               </li> -->
-                                         </ul>
-                                      </li>
-                                      <li><a href="merchandise.html">Merchandise</a></li>
-                                      <li><a href="https://secure.givelively.org/donate/washington-student-cancer-awareness-association">Donate</a></li>
-                                   </ul>
-                                </nav>
+                       <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="events.html">Events</a></li>
+                          <li>
+                             <a href="tutoring.html" class="icon fa-angle-down">WASCAA+</a>
+                             <ul>
+                                <li><a href="tutoring.html">Learn More & Sign Up</a></li>
+                                <li><a href="tutorapplication.html">Tutor Application</a></li>
+                             </ul>
+                          </li>
+                          <li>
+                             <a href="#" class="icon fa-angle-down">About Us</a>
+                             <ul>
+                                <!-- <li><a href="generic.html">Generic</a></li> -->
+                                <li><a href="mission.html">Our Mission</a></li>
+                                <li><a href="team.html">Our Team</a></li>
+                                <li><a href="getinvolved.html">Get Involved</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <!-- <li><a href="elements.html">Elements</a></li>
+                                   <li>
+                                    <a href="#">Submenu</a>
+                                    <ul>
+                                        <li><a href="#">Option One</a></li>
+                                        <li><a href="#">Option Two</a></li>
+                                        <li><a href="#">Option Three</a></li>
+                                        <li><a href="#">Option Four</a></li>
+                                    </ul>
+                                   </li> -->
+                             </ul>
+                          </li>
+                          <li><a href="merchandise.html">Merchandise</a></li>
+                          <li><a href="https://secure.givelively.org/donate/washington-student-cancer-awareness-association">Donate</a></li>
+                       </ul>
+                    </nav>
                 </header>
 
 			<!-- Main -->
-            <div id="row" style = "z-index:1000;">
-            <h3 style = "margin-left: 10px; text-align: center;" id = "teamfirsttext">WASCAA's Team Members</h3>
-            <div id="column">
-                <div id="card">
-                  <img src="images/team/lakshinkumar.JPG" alt="Lakshin Kumar" style="width:100%">
-                  <div class="containerteam">
-                    <h3 class="titlesmaller wrappersmall">Lakshin Kumar</h3>
-                    <!--<p id = "wrapper">Nonprofit Director</p>-->
-                  </div>
-                </div>
-              </div>
-              <div id="column">
-                <div id="card">
-                  <img src="images/allantemp.JPG" alt="Allan Dao" id = "specialphoto">
-                  <div class="containerteam">
-                    <h3>Allan Dao</h3>
-                  </div>
-                </div>
-              </div>
-              <div id="column">
-                <div id="card">
-                  <img src="images/team/christopherlee.JPG" alt="Christopher Lee" style="width:100%">
-                  <div class="containerteam">
-                    <h3 class="titlesmaller">Christopher Lee</h3>
-                  </div>
-                </div>
-              </div>
-              <div id="column">
-                <div id="card">
-                  <img src="images/team/sidnair.JPG" alt="Sid Nair" style="width:100%">
-                  <div class="containerteam">
-                    <h3>Sid Nair</h3>
-                  </div>
-                </div>
+            <div class = "container">
+                <h2 style = "margin-left: 10px; margin-top: 25px; text-align: center;">WASCAA's Team Members</h3>
             </div>
-            <div id="column">
-                <div id="card">
-                  <img src="images/amoghtemp.png" alt="Amogh Pande" style="width:100%">
-                  <div class="containerteam">
-                    <h3 class = "wrappersmall">Amogh <br class = "smallcolumns">Pande</h3>
-                  </div>
-                </div>
-              </div>
-            <div id="column">
-                <div id="card">
-                  <img src="images/team/dannypham.JPG" alt="Danny Pham" style="width:100%">
-                  <div class="containerteam">
-                    <h3>Danny <br class="smallcolumns2" /> Pham</h3>
-                  </div>
-                </div>
-            </div>
-            <div id="column">
-                <div id="card">
-                  <img src="images/team/dennisni.JPG" alt="Dennis Ni" style="width:100%">
-                  <div class="containerteam">
-                    <h3 id = "wrapper">Dennis <br class = "smallcolumns" /> Ni</h3>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <div id="column">
-                <div id="card">
-                  <img src="images/divyatemp.png" alt="Divya Akkiraju" style="width:100%">
-                  <div class="containerteam">
-                    <h3 class = "wrappersmall">Divya <br class = "smallcolumns" /> Akkiraju</h3>
-                    <!--<p id = "wrapper">Social Media Lead</p>-->
-                  </div>
-                </div>
-            </div>
-            <div id="column">
-                <div id="card">
-                  <img src="images/team/ethanbouvet.JPG" alt="Ethan Bouvet" style="width:100%">
-                  <div class="containerteam">
-                    <h3 class = "wrappersmall">Ethan <br class = "smallcolumns" /> Bouvet</h3>
-                  </div>
-                </div>
-            </div>
-            <div id="column">
-                <div id="card">
-                  <img src="images/team/joonchung.JPG" alt="Joon Chung" style="width:100%">
-                  <div class="containerteam">
-                    <h3 id = "wrapper">Joon Chung</h3>
-                  </div>
-                </div>
-            </div>
-            
-            <div id="row">
-            
-            <div id="column">
-                <div id="card">
-                  <img src="images/team/jarekcruz.JPG" alt="Jarek Cruz" style="width:100%">
-                  <div class="containerteam">
-                    <h3 >Jarek Cruz</h3>
-                  </div>
-                </div>
-            </div>
-            <div id="column">
-                <div id="card">
-                  <img src="images/team/annali.JPG" alt="Anna Li" style="width:100%">
-                  <div class="containerteam">
-                    <h3 >Anna <br class = "smallcolumns" /> Li</h3>
-                  </div>
-                </div>
-            </div>
-            </div>
-            
-            <div id="row">
-            <div id="column">
-                <div id="card">
-                  <img src="images/connortemp.png" alt="Connor Lynch" style="width:100%">
-                  <div class="containerteam">
-                    <h3 class = "wrappersmall">Connor <br class = "smallcolumns" /> Lynch</h3>
-                  </div>
-                </div>
-            </div>  
-            <div id="column">
-                <div id="card">
-                  <img src="images/team/angelasu.JPG" alt="Angela Su" style="width:100%">
-                  <div class="containerteam">
-                    <h3 >Angela Su</h3>
-                  </div>
-                </div>
-            </div>
-            <div id="column">
-                <div id="card">
-                  <img src="images/team/kayciesuzuki.JPG" alt="Kaycie Suzuki" style="width:100%">
-                  <div class="containerteam">
-                    <h3>Kaycie <br class="smallcolumns" /> Suzuki</h3>
-                  </div>
-                </div>
-            </div>
-            <div id="column">
-                <div id="card">
-                  <img src="images/team/rukshangverma.JPG" alt="Rukshang Verma" style="width:100%">
-                  <div class="containerteam">
-                    <h3>Rukshang Verma</h3>
-                  </div>
-                </div>
-            </div>
-            <div id="column" class = "columnhidefour specialcasefour">
-                <div id="card">
-                  <img src="images/team/stevenzhang.JPG" alt="Steven Zhang" style="width:100%">
-                  <div class="containerteam">
-                    <h3 class="titlesmaller">Steven Zhang</h3>
-                  </div>
-                </div>
-            </div>
-            <!--<div class = "columnhidefour" style = "opacity: 0;">
-                <div id="card">
-                  <img src="images/team/stevenzhang.JPG" alt="Blank" style="width:100%">
-                  <div class="containerteam">
-                    <h3 >Blank</h3>
-                    <p class="title">Committee Member</p>
-                  </div>
-                </div>
-            </div>
-            <div class = "columnhidefour" style = "opacity: 0;">
-                <div id="card">
-                  <img src="images/team/stevenzhang.JPG" alt="Blank" style="width:100%">
-                  <div class="containerteam">
-                    <h3 >Blank</h3>
-                    <p class="title">Committee Member</p>
-                  </div>
-                </div>
-            </div>-->
-            <div id="column" class = "columnhidetwo specialcasetwo">
-                <div id="card">
-                  <img src="images/team/stevenzhang.JPG" alt="Steven Zhang" style="width:100%">
-                  <div class="containerteam">
-                    <h3 class="titlesmaller">Steven Zhang</h3>
-                  </div>
-                </div>
-            </div>
-            </div>
-            
-            <div id="row" class = "lastrow" style = "margin-bottom: 435px;">
-            <div id="column">
-                <div id="card">
-                  <img src="images/team/stevenzhang.JPG" alt="Steven Zhang" style="width:100%">
-                  <div class="containerteam">
-                    <h3 class="titlesmaller">Steven Zhang</h3>
-                  </div>
-                </div>
-            </div>
-            <div class = "columnhidefour" style = "opacity: 0;">
-                <div id="card">
-                  <img src="images/team/stevenzhang.JPG" alt="Blank" style="width:100%">
-                  <div class="containerteam">
-                    <h3 >Blank</h3>
-                    <p class="title">Committee Member</p>
-                  </div>
-                </div>
-            </div>
-            </div>
+            <div class = "container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div id="card">
+                          <img src="images/team/lakshinkumar.JPG" alt="Lakshin Kumar">
+                          <div class="containerteam">
+                            <h3 class="titlesmaller wrappersmall">Lakshin Kumar</h3>
+                            <!--<p id = "wrapper">Nonprofit Director</p>-->
+                          </div>
                         </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div id="card">
+                          <img src="images/team/allandao.JPG" alt="Allan Dao" id = "specialphoto">
+                          <div class="containerteam">
+                            <h3>Allan Dao</h3>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div id="card">
+                          <img src="images/team/joonchung.JPG" alt="Joon Chung" style="width:100%">
+                          <div class="containerteam">
+                            <h3 id = "wrapper">Joon Chung</h3>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div id="card">
+                            <img src="images/team/jarekcruz.JPG" alt="Jarek Cruz" style="width:100%">
+                            <div class="containerteam">
+                              <h3 >Jarek Cruz</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+
+        <div class = "container">
+            <p>We recently updated our website with new details as we continue to make transitions and would be excited to add to this page to highlight past involvement. Please let us know if you are interested in joining us or should be on this page by <a href="contact.html">contacting us</a>!</p>
+        </div>
+
+        <!--   <div class = "container">
+                <h2 style = "margin-left: 10px; margin-top: 25px; text-align: center;">Friends of WASCAA</h3>
+            </div>
+            <div class = "container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div id="card">
+                          <img src="images/team/lakshinkumar.JPG" alt="Lakshin Kumar">
+                          <div class="containerteam">
+                            <h3 class="titlesmaller wrappersmall">Lakshin Kumar</h3>
+                            <p id = "wrapper">Nonprofit Director</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div id="card">
+                          <img src="images/team/lakshinkumar.JPG" alt="Lakshin Kumar">
+                          <div class="containerteam">
+                            <h3 class="titlesmaller wrappersmall">Lakshin Kumar</h3>
+                            <p id = "wrapper">Nonprofit Director</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div id="card">
+                          <img src="images/team/lakshinkumar.JPG" alt="Lakshin Kumar">
+                          <div class="containerteam">
+                            <h3 class="titlesmaller wrappersmall">Lakshin Kumar</h3>
+                            <p id = "wrapper">Nonprofit Director</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div id="card">
+                          <img src="images/team/lakshinkumar.JPG" alt="Lakshin Kumar">
+                          <div class="containerteam">
+                            <h3 class="titlesmaller wrappersmall">Lakshin Kumar</h3>
+                            <p id = "wrapper">Nonprofit Director</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+          </div> -->
+
+          
+
 			<!-- Footer -->
 				<footer>
-                    <div id="footer" style = "background: #f5f5f5;">
+                    <div id="footer">
 					<ul class="icons">
 						<!--<li id = "margin-footer" style = "margin-top: 50px;" ><a href="https://twitter.com/WashingtonSCAA" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="https://www.facebook.com/WASCAA.npo/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>-->
 						<li><a href="https://www.instagram.com/wa.scaa/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						
 					</ul>
 					<ul class="copyright">
 						<li>&copy; 2020 Washington Student Cancer Awareness Association. All rights reserved.</li>
