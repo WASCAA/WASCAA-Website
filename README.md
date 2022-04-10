@@ -12,3 +12,6 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+team.html page
+Photos all have the same dimension, 3:2 crop (width/height) 
