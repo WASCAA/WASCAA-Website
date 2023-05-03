@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Washington Student Cancer Awareness Association</title>
+      <script src="https://kit.fontawesome.com/4944e6043a.js" crossorigin="anonymous"></script>
+      <meta name="description" content="Washington Student Cancer Awareness Assocation (WASCAA) is a nonprofit organization led and run by students that raises awareness and creates charitable fundraising events for cancer throughout Washington."/>
+      <link rel="icon" href="wascaaicon.png" type="image/png">
+      <meta name="keywords" content="University of Washington, Inglemoor High School, Washington Student Cancer Awareness Assocation, WASCAA, Cancer, Non-Profit, Washington State, Students, Community, Health, Health Awareness, Awareness">
+      <meta name="author" content="Allan Dao, WASCAA Team">
+      <meta name="robots" content="index, follow" />
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <!--[if lte IE 8]>
+      <link rel="stylesheet" href="assets/css/ie8.css" />
+      <![endif]-->
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118965499-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'UA-118965499-1');
+      </script>
+      <style>
+         /* Custom styles written in order to add to the website theme and redesign certain parts*/
+         /* For logos (experience) and hobbies section with 3 images/logos */
+         #three-items {
+         display:flex;
+         justify-content:center;
+         align-items:center; 
+         }
+         .img-full {
+         min-width: 100%;
+         max-width: 100%;
+         height: auto;
+         }
+         .img_row {
+         margin: 10px 10px 0 10px;
+         }
+         .img_row::after {
+         content: "";
+         clear: both;
+         display: table;
+         margin: 0 auto;
+         }
+         .img_column {
+         float: left;
+         width: 31.7%;
+         height: auto;
+         margin: 0 10px 0 10px;
+         padding: 0;
+         }
+         /*Styles above for image rows in project section*/
+         /*Media Query to make images fill width of screen*/
+         @media screen and (max-width: 980px) {
+         .img_column {
+         float: left;
+         width: 100%;
+         }
+         }
+         /*Min-width for skill bars, force the three item lists to stack, turn on :active overlay for mobile devices*/
+         @media screen and (max-width: 480px) {
+         #three-items {
+         display: block;
+         padding: 0;
+         }
+         .imgContainer:active .overlay {
+         background-color: rgba(0,0,0,0.75);
+         background-color: rgb(0,0,0,0.75);
+         opacity: 1;
+         }
+         .hobby_icons {
+         padding: 14px 30px 0 30px;
+         }
+         }
+         @media screen and (max-width: 370px) {
+         .skills-progress {
+         min-width: 200px;
+         }
+         .progress div {
+         font-size: 10px;
+         }
+         .project_overlay .project_overlay_text {
+         font-size: 12px;
+         }
+         }
+         /*Background images for header sections*/
+         #design_background {
+         background: linear-gradient(180deg, rgba(52, 152, 219, .45) 0%, rgba(52, 152, 219, .45) 96%), url(https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3ecc13b203d60ff0fa05b07805b0f2ca&auto=format&fit=crop&w=1950&q=80) no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+         position: absolute;
+         /* scroll for mobile */
+         background-attachment: scroll;
+         min-height: 100%;
+         height: inherit;
+         width: 100%;
+         z-index: 1000;
+         }
+         /*Project overlays*/
+         .project_overlay_text {
+         color: white;
+         font-size: 15px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         text-align: center;
+         width: 90%;
+         }
+         .project_overlay {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         height: 100%;
+         width: 100%;
+         opacity: 0;
+         transition: .5s ease;
+         background-color: rgba(0,140,186,0);
+         }
+         .project_imgContainer {
+         position: relative;
+         }
+         .project_imgContainer:hover .project_overlay {
+         background-color: rgba(0,0,0,0.75);
+         background-color: rgb(0,0,0,0.75);
+         opacity: 1;
+         }
+         .project_img {
+         width: 100%;
+         box-sizing: border-box;
+         }
+      </style>
+   </head>
+   <body class="landing">
+      <div id="page-wrapper">
+         
+         <!-- Banner -->
+         <section id="banner">
+            <!-- <h2>Alpha</h2>
+               <p>Another fine responsive site template freebie by HTML5 UP.</p> -->
+            <center>
+               <img src = "wascaalogo.png" id = "bannerimage" alt="Washington Student Cancer Awareness Association Logo" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none; height: auto; width: 60%;">
+            </center>
+            <div id="bannervideo" style = "margin-top: -1px;">
+               <div id="video_overlays" style = "background-image: linear-gradient(rgba(213, 113, 211, 0.5) 0%, rgba(176, 67, 133, 0.83) 96%), url('https://images.unsplash.com/photo-1438401171849-74ac270044ee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cbd3d2a5440199453a526abb9a62fe49&auto=format&fit=crop&w=3200&q=100');"></div>
+               <video playsinline autoplay muted loop preload = 'auto' class="bgvid" id = "bgvidjs">
+                  <!-- <source src="video.webm" type="video/webm"> -->
+                  <source src="https://images.unsplash.com/photo-1438401171849-74ac270044ee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cbd3d2a5440199453a526abb9a62fe49&auto=format&fit=crop&w=1192&q=80" type="video/mp4">
+               </video>
+            </div>
+         </section>
+         <!-- Main -->
+         <section id="main" class="container">
+            <section class="box special">
+               <header class="major">
+                  <h2>Thank you for a great journey.
+                  </h2>
+                  <p style = "padding-bottom: 5px;">
+                     As WASCAA hits the 5 year marker, we wanted to take the opportunity to reflect, share our appreciation, and share our re-aligned strategy looking forward.
+                     <!--<br /><br /> <strong>It all starts here.</strong></p>-->
+               </header>
+               <!--<span class="image featured"  style = "margin-top: 10px;"><img src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea57442bf3e8f56890337f5accda026b&auto=format&fit=crop&w=1050&q=80" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>-->
+            </section>
+
+            <!-- Row -->
+            <div class="row">
+               <div class="6u 12u(narrower)">
+                  <section class="box special">
+                     <span class="image featured"><img src="images/our_mission.JPG" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>
+                     <h3>Reflections on a 5 Year Journey</h3>
+                     <p style = "text-align: left;">
+                        WASCAA, or Washington Student Cancer Awareness Association, is an organization that maintained 501(c)(3) status in the interest of cancer awareness and fundraising, was originally created and run by high school students in the Puget Sound Area. In early winter of 2018, many of the students in our initial team had fueled efforts into competing at a HOSA – Future Health Professionals conference, bringing the intersection of community and health to mind. With newly developed skills and a new desire to redirect energy and time more directly towards the community, the initial inklings of WASCAA was formed.
+                     </p>
+                     <li style="text-align:center; display: block;">
+                        <a href="#" class="button alt" style="background-color: #9f7ade; color: white;">Read the Full Reflection</a>
+                     </li>
+                  </section>
+               </div>
+               <div class="6u 12u(narrower)">
+                  <section class="box special">
+                     <span class="image featured"><img src="images/sweatshirt/pointing.JPG" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>
+                     <h3>Next Steps</h3>
+                     <!-- <p style = "text-align: left;">
+                     </p> -->
+                     <!-- Newsletter -->
+                     <!-- <hr /><br /> -->
+                     <ul style = "text-align: left;">
+                       <li>WASCAA at the University of Washington: If you are in the Seattle area, WASCAA has an established RSO at UW that is planning exciting events for the 2023-2024 academic year. Stay in touch with a <a href="#">UW specific newsletter (MAILCHIMP TODO).</a></li>
+                       <li>Consultation Calls: WASCAA is driven by a strong community of diverse and high-achieving students with many different strengths and interests. We're excited to offer an opportunity for free consultations (for those with philanthropic purposes) with us if you'd like a Gen Z perspective or our technical experience. Learn more <a href="#">here.</a> and schedule a call <a href="#">here.</a></li>
+                       <li>Lessons Learned: Insights based on experiences, good and bad, regarding teamwork, student-run operating models, and more.</li>
+                       <li>Resources: Find an archived version of our website, utilizing fantastic free tools for fundraising like Give Lively and more below on this page</li>
+                     </ul>
+                     <!-- <hr /><br /> -->
+                     <!-- <ul class="actions">
+                        <li style = "margin-top: 7px;"><a href="#" target = "_blank" class="button alt">Schedule a Call</a></li>
+                     </ul> -->
+                  </section>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="6u 12u(narrower)">
+                  <section class="box special">
+                     <span class="image featured"><img src="images/sweatshirt/pointing.JPG" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>
+                     <h3>Consultation Calls</h3>
+                     <p>
+                     We're excited to offer consultation calls with past and presently involved members of WASCAA in the case that as a nonprofit or student-run organization, you wish to consult with us (a 3rd party) regarding technology, experiences with the setup and planning of our past events, and general advice. In particular, we'd be interested in setting time aside to best help debug small issues on your website or consult about practical tools (such as ) based on our past experiences and background.
+                     </p>
+                     <!-- <hr /><br /> -->
+                     <!-- <ul class="actions">
+                        <li style = "margin-top: 7px;"><a href="#" target = "_blank" class="button alt">Schedule a Call</a></li>
+                     </ul> -->
+                     <li style="text-align:center; display: block;">
+                        <a href="#" class="button alt" style="background-color: #9f7ade; color: white;">Schedule a Call</a>
+                     </li>
+                  </section>
+               </div>
+               <div class="6u 12u(narrower)">
+                  <section class="box special">
+                     <span class="image featured"><img src="images/sweatshirt/pointing.JPG" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>
+                     <h3>Resources</h3>
+                     <ul style = "text-align: left;">
+                       <li><a href="#">Lessons Learned (Blog/Notion)</a></li>
+                       <li><a href="#">Practical Tech Tools (Blog/Notion)</a></li>
+                       <li><a href="#">wascaa.org website archive</a></li>
+                       <li><a href="#">Contact Us</a></li>
+                     </ul>
+                     <!-- <hr /><br /> -->
+                     <!-- <ul class="actions">
+                        <li style = "margin-top: 7px;"><a href="#" target = "_blank" class="button alt">Schedule a Call</a></li>
+                     </ul> -->
+                  </section>
+               </div>
+            </div>
+
+            <!--<div class="row">
+               <div class="12u 12u(narrower)">
+               
+               		<section class="box special">
+               			<span class="image featured"><img src="https://images.unsplash.com/photo-1508087625439-de3978963553?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80" alt="" style = "user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"/></span>
+               			<h3>Event Updates</h3>
+               			<p>Thank you for all of the support for our <a href = "https://www.eventbrite.com/e/kick-away-cancer-charity-soccer-tournament-tickets-60735275845">Kick Away Cancer soccer tournament</a>. Back in May 25th-26th last year, we had many middle and high school teams join us and enjoy some soccer in the sunshine, ultimately helping us raise over $3000 dollars. Please stay tuned for our future initiatives and thank you for the overwhelming support! <br/><br/>Click the photo below to see pictures of some of the soccer teams!</p>
+               			<a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/183209327@N07/albums/72157710171706327" title="Kick Away Cancer"><img src="https://live.staticflickr.com/65535/48485696086_802f716512_n.jpg" width="320" height="240" alt="Kick Away Cancer"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+               			<ul class="actions">
+               				<li style = "margin-top: 7px;"><a href="events.html" class="button alt">See More</a></li>
+               			</ul>
+               		</section>
+               
+               	</div>
+               </div>-->
+
+              
+      </section>
+
+      <!-- Footer -->
+            <footer id="footer">
+               <ul class="icons">
+                  <!--<li><a href="https://twitter.com/WashingtonSCAA" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="https://www.facebook.com/WASCAA.npo/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>-->
+                  <li><a href="https://www.instagram.com/wa.scaa/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                  
+               </ul>
+               <ul class="copyright">
+                  <li>&copy; 2023 Washington Student Cancer Awareness Association. All rights reserved.</li>
+                  <li>Design: HTML5 UP and WASCAA</a></li>
+                  <!-- <li><a href = "contact.html">Contact Us</a></li> -->
+                  <li><a href = "privacypolicy.html">Privacy Policy</a></li>
+                  <li><a href = "termsofuse.html">Terms of Use</a></li>
+               </ul>
+            </footer>
+
+      </div>
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.dropotron.min.js"></script>
+      <script src="assets/js/jquery.scrollgress.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+      <script>
+         var vid = document.getElementById("bgvidjs");
+         vid.playbackRate = 0.80;
+      </script>
+   </body>
+</html>
